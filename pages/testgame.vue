@@ -1,7 +1,19 @@
 <template>
   <div>
+    <div style="background-color: white">
+      <p style="font-size: 18px; padding: 20px">
+        И в конце - он приходит к логову,<br />будет сложно, но он победит.
+        <br />
+
+        И дракона убив, он вернется домой,<br />
+        но уже не тем, кто уходил.
+      </p>
+      <p style="font-size: 20px; padding: 20px">Билал Иликеев</p>
+      <p style="color: blue; font-size: 16px; padding: 20px">@ilikeevb</p>
+    </div>
+
     <div class="score">
-      <h1>Cчёт: {{ score }}</h1>
+      <h1>Cчёт: {{ score }}/{{ target }}</h1>
       <h1 v-if="xp > 0">
         <span v-for="i in xp" :key="i">
           <img src="~/assets/heart.png" width="50" alt="" />
@@ -49,7 +61,7 @@
         <span v-else>Тест: выкл</span>
       </button>
     </div>
-    <canvas id="canvas" :class="game.background"></canvas>
+    <canvas id="canvas" class="white-background"></canvas>
   </div>
 </template>
 
@@ -61,13 +73,13 @@ export default {
       score: 0,
       debug: false,
       gameOver: false,
-      xp: 3,
+      xp: 100,
       target: null,
     };
   },
   computed: {
     game() {
-      let id = this.$route.params.id;
+      let id = 1;
       return this.$store.getters["level/getLevels"].find(function (game) {
         return game.id == id;
       });
@@ -81,24 +93,9 @@ export default {
       this.$router.push({ name: "map" });
     },
     nextLevel() {
-      let id = this.$route.params.id;
-      let score = this.score;
-
-      this.$store.dispatch("level/DONE_LEVEL", {
-        score: score,
-        id: id,
-      });
       this.$router.push({ name: "map" });
     },
     restart() {
-      let id = this.$route.params.id;
-      let score = this.score;
-
-      this.$store.dispatch("level/RECORD_LEVEL", {
-        score: score,
-        id: id,
-      });
-
       location.reload();
     },
   },
@@ -168,7 +165,7 @@ export default {
 
     let CurrentFrame = 0;
 
-    let xp = 4;
+    let xp = 100;
     let score = 0;
 
     let gameOver = false;
@@ -453,9 +450,8 @@ export default {
 </script>
 
 <style scoped>
-#canvas.bg1 {
-  background-image: URL("/bg/Battleground1.png");
-  background-size: cover;
+.white-background {
+  background-color: white;
 }
 #canvas.bg2 {
   background-image: URL("/bg/Battleground2.png");

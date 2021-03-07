@@ -17,7 +17,7 @@
   height: 100vh;
 }
 .main {
-  background-image: URL("/bg/bg.jpg");
+  background-image: URL("/bg/bg.png");
   background-size: cover;
 }
 </style>

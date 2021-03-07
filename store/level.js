@@ -5,6 +5,7 @@ export const state = () => ({
             record: 0,
             done: true,
             close: false,
+            history: ["Твоё первое задание!", "Отправляйся к дереву у Луоморья.", "Он имеет запасы химических элементов.", "Помоги Алхимику собрать металлы"],
             name: 'Металлы. Часть 1',
             stars: [{ active: true }, { active: false }, { active: false }],
             theory: [
@@ -53,6 +54,7 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
+            history: ["В прошлый раз ты отлично справился!", "В этот раз будет посложнее.", "Помоги собрать металлы в старом кладбище.", "Будь осторожен, многие не справились с этим заданием"],
             name: 'Металлы. Часть 2',
             stars: [{ active: true }, { active: true }, { active: false }],
             theory: [
@@ -87,20 +89,21 @@ export const state = () => ({
                     yPos: 220,
                 },
             ],
-            good: ["Литий",
-                "Железо",
-                "Серебро",
-                "Золото",
-                "Свинец",
-                "Вольфрам",
-                "Алюминий"],
-            bad: ["Водород", "Азот", "Неон", "Гелий", "Хлор", "Аргон", "Селен"],
+            good: ["Li",
+                "Fe",
+                "Ag",
+                "Au",
+                "Pb",
+                "W",
+                "Al"],
+            bad: ["H", "N", "Ne", "He", "Cl", "Ar", "Se"],
         },
         {
             id: 3,
             record: 0,
             done: false,
             close: true,
+            history: [],
             name: 'Газы. Часть 1',
             stars: [{ active: true }, { active: true }, { active: false }],
             theory: [
@@ -111,6 +114,7 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
+            history: [],
             name: 'Газы. Часть 2',
             stars: [{ active: true }, { active: true }, { active: false }],
             theory: [
@@ -121,6 +125,7 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
+            history: [],
             name: 'Оксиды. Часть 1',
             stars: [{ active: true }, { active: true }, { active: false }],
             theory: [
@@ -131,6 +136,7 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
+            history: [],
             name: 'Оксиды. Часть 2',
             stars: [{ active: true }, { active: true }, { active: true }],
             theory: [
@@ -141,6 +147,7 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
+            history: [],
             name: 'Кислоты. Часть 1',
             stars: [{ active: true }, { active: true }, { active: false }],
             theory: [
@@ -151,6 +158,7 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
+            history: [],
             name: 'Кислоты. Часть 2',
             stars: [{ active: true }, { active: true }, { active: true }],
             theory: [

@@ -1,3 +1,7 @@
+.ma-0 {
+    margin: 0;
+}
+
 .ma-1 {
     margin: 5px;
 }
@@ -12,6 +16,10 @@
 
 .ma-4 {
     margin: 20px;
+}
+
+.pa-0 {
+    padding: 0;
 }
 
 .pa-1 {

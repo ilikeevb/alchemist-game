@@ -51,7 +51,7 @@
               </button>
               <button
                 v-else
-                @click="goGame(level.id)"
+                @click="showStartDialog(level.id)"
                 :class="{
                   'nes-btn': true,
                   'is-success': level.done,
@@ -60,6 +60,27 @@
               >
                 {{ level.name }}
               </button>
+              <dialog
+                class="nes-dialog is-dark no-scroll"
+                :id="'dialog-start' + level.id"
+              >
+                <form method="dialog" class="form ma-0 pa-0">
+                  <menu class="dialog-menu">
+                    <h3>{{ level.name }}</h3>
+                    <p v-for="(row, n) in level.history" :key="n">
+                      <span v-html="row" />
+                    </p>
+                    <h3>Цель: {{ level.target }}</h3>
+                    <button
+                      @click="goGame(level.id)"
+                      class="nes-btn is-success"
+                    >
+                      Начать
+                    </button>
+                    <button class="nes-btn is-primary">Назад</button>
+                  </menu>
+                </form>
+              </dialog>
             </div>
             <div class="col-2" align="center">
               <dialog class="nes-dialog" :id="'dialog-default' + level.id">
@@ -150,6 +171,9 @@ export default {
     showDialog(key) {
       document.getElementById("dialog-default" + key).showModal();
     },
+    showStartDialog(key) {
+      document.getElementById("dialog-start" + key).showModal();
+    },
   },
 };
 </script>
@@ -161,5 +185,11 @@ export default {
 .titles {
   border-bottom: 5px solid white;
   margin-bottom: 15px;
+}
+.no-scroll::-webkit-scrollbar {
+  width: 0;
+}
+.no-scroll {
+  -ms-overflow-style: none;
 }
 </style>

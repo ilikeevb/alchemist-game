@@ -1,6 +1,13 @@
 <template>
   <div>
-    <div class="container d-none d-lg-block d-xl-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm" align="center">
+          <h1 class="name">Алхимик</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none d-md-block d-lg-block d-xl-block">
       <div class="row">
         <div class="col-sm" align="center">
           <button
@@ -28,7 +35,7 @@
         </div>
       </div>
     </div>
-    <div class="container d-xl-none d-lg-none">
+    <div class="container d-md-none d-xl-none d-lg-none">
       <div class="row">
         <div class="col-sm" align="center">
           <h3 style="color: white; text-shadow: 2px 2px 10px #000">
@@ -68,4 +75,9 @@ export default {
 </script>
 
 <style scoped>
+.name {
+  font-size: 48px;
+  color: white;
+  text-shadow: 4px 4px 3px black;
+}
 </style>

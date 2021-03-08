@@ -77,8 +77,14 @@
         <div class="col-6" align="center">
           <p>{{ name }}, готов к приключениям?</p>
           <p>
-            Запомни: Алхимиком можно управлять стрелками вверх, вправо, влево
-            или кнопками W, A, D.
+            <span style="color: red">Запомни: </span>Алхимиком можно управлять
+            стрелками вверх, вправо, влево или кнопками W, A, D.
+          </p>
+          <p style="background-color: white; color: black; padding: 15px">
+            Игру делали во время хакатона, пока не все уровни готовы. Если
+            найдете ошибку или баг, то просим сообщить нам в телеграм
+            <a href="https://t.me/ilikeevb">@ilikeevb</a> или ВК
+            <a href="https://vk.com/ilikeevb">vk.com/ilikeevb</a>
           </p>
           <button @click="setName" type="button" class="nes-btn is-success">
             Начать игру!

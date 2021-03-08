@@ -75,7 +75,7 @@
       <p class="title">Добро пожаловать!</p>
       <div class="row justify-content-center">
         <div class="col-6" align="center">
-          {{ name }}
+          <p>{{ name }}, готов к приключениям?</p>
           <button @click="setName" type="button" class="nes-btn is-success">
             Начать игру!
           </button>

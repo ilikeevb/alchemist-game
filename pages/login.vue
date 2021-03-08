@@ -76,6 +76,10 @@
       <div class="row justify-content-center">
         <div class="col-6" align="center">
           <p>{{ name }}, готов к приключениям?</p>
+          <p>
+            Запомни: Алхимиком можно управлять стрелками вверх, вправо, влево
+            или кнопками W, A, D.
+          </p>
           <button @click="setName" type="button" class="nes-btn is-success">
             Начать игру!
           </button>

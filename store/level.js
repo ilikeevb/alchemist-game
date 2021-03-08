@@ -5,14 +5,14 @@ export const state = () => ({
             record: 0,
             done: true,
             close: false,
-            history: ["Твоё первое задание!", "Отправляйся к дереву у Луоморья.", "Он имеет запасы химических элементов.", "Помоги Алхимику собрать металлы"],
+            history: ["Твоё первое задание!", "Помоги Алхимику собрать металлы"],
             name: 'Металлы. Часть 1',
             stars: [{ active: true }, { active: false }, { active: false }],
             theory: [
                 "Металлы: <span style = 'color: green' >Литий (Li)</span >, <span style = 'color: green' >Железо (Fe)</span >, <span style = 'color: green'>Серебро (Ag)</span >, <span style = 'color: green' >Золото (Au)</span >, <span style = 'color: green' >Свинец (Pb)</span >, <span style = 'color: green' >Вольфрам (W)</span >, <span style = 'color: green' >Алюминий (Al)</span > и др.",
                 "Металлы (от лат. metallum — шахта, рудник) — группа элементов, в виде простых веществ обладающих характерными металлическими свойствами, такими как высокие тепло- и электропроводность, положительный температурный коэффициент сопротивления, высокая пластичность и металлический блеск.",
             ],
-            target: 4,
+            target: 15,
             background: 'bg3',
             elements: [
                 {
@@ -54,14 +54,14 @@ export const state = () => ({
             record: 0,
             done: false,
             close: true,
-            history: ["В прошлый раз ты отлично справился!", "В этот раз будет посложнее.", "Помоги собрать металлы в старом кладбище.", "Будь осторожен, многие не справились с этим заданием"],
+            history: ["В прошлый раз ты отлично справился!", "В этот раз будет посложнее.", "Помоги Алхимику собрать металлы"],
             name: 'Металлы. Часть 2',
             stars: [{ active: true }, { active: true }, { active: false }],
             theory: [
                 "Металлы: <span style = 'color: green' >Li</span >, <span style = 'color: green' >Fe</span >, <span style = 'color: green' >Ag</span >, <span style = 'color: green' >Au</span >, <span style = 'color: green' >Pb</span >, <span style = 'color: green' >W</span >, <span style = 'color: green' >Al</span > и др.",
                 "Металлы (от лат. metallum — шахта, рудник) — группа элементов, в виде простых веществ обладающих характерными металлическими свойствами, такими как высокие тепло- и электропроводность, положительный температурный коэффициент сопротивления, высокая пластичность и металлический блеск.",
             ],
-            target: 4,
+            target: 15,
             background: 'bg4',
             elements: [
                 {

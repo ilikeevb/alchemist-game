@@ -8,7 +8,7 @@
         И дракона убив, он вернется домой,<br />
         но уже не тем, кто уходил.
       </p>
-      <p style="font-size: 20px; padding: 20px">Билал Иликеев</p>
+      <p style="font-size: 25px; padding: 20px">Браузерная игра на Vue.js</p>
       <p style="color: blue; font-size: 16px; padding: 20px">@ilikeevb</p>
     </div>
 
